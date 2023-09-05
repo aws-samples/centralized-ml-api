@@ -1,0 +1,31 @@
+{
+  "models": [
+    {
+      "name": "open-llama",
+      "model_id": "huggingface-textgeneration-open-llama",
+      "instance": "ml.g5.2xlarge",
+      "autoscaling": {
+        "max_capacity": 2,
+        "min_capacity": 1,
+        "invocations_per_instance": 5
+      },
+      "integration": {
+        "type": "lambda",
+        "properties": {
+          "code": "functions/example_function",
+          "permissions": ["sagemaker:InvokeEndpoint"],
+          "timeout": 29,
+          "memory": 1024,
+          "runtime": "python3.10"
+        }
+      }
+    },
+    {
+      "name": "sd-1-0",
+      "model_package_arn": "arn:aws:sagemaker:us-east-1:865070037744:model-package/sdxl-v1-0-8cc703e-43ceeb816ad635d18270e159eb5096ad",
+      "instance": "ml.g5.2xlarge",
+      "integration": { "type": "api" }
+    }
+  ],
+  "endpoints": []
+}

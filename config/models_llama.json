@@ -1,0 +1,22 @@
+{
+    "models": [
+      {
+        "name": "llama-2",
+        "model_package_arn": "arn:aws:sagemaker:us-east-1:865070037744:model-package/llama2-7b-f-e46eb8a833643ed58aaccd81498972c3",
+        "instance": "ml.g5.4xlarge",
+        "integration": {
+          "type": "api",
+          "headers": ["X-Amzn-SageMaker-Custom-Attributes"]
+        }
+      },
+      {
+        "name": "sd-1-0",
+        "model_package_arn": "arn:aws:sagemaker:us-east-1:865070037744:model-package/sdxl-v1-0-8cc703e-43ceeb816ad635d18270e159eb5096ad",
+        "instance": "ml.g5.2xlarge",
+        "integration": { "type": "api" }
+      }
+    ],
+    "endpoints": [
+    ]
+  }
+  
