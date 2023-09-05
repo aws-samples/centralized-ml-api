@@ -1,14 +1,14 @@
 
 # Centralized Machine Learning API
 
-This is a CDK project that stands up a centralised API for use during Hackathons or any event where you want to provide a range of models behind an easy to use centralised API. The models to deploy/integrate with are provided through a configuration file which allows for easy reuse between events and only requires a limited amount of knowledge to be able to use.
+This is a CDK project that stands up a centralized API for use during Hackathons or any event where you want to provide a range of models behind an easy to use centralized API. The models to deploy/integrate with are provided through a configuration file which allows for easy reuse between events and only requires a limited amount of knowledge to be able to use.
 
 <p align="center">
   <img src="/img/architecture.png" />
 </p>
 
 
-> :warning: This artifact deploys a **public API** resource and should be **deleted** when not in use or a form of **authentication should be added** to the API.
+> :warning: This artifact deploys a **public API** resource and should be **deleted** when not in use or a form of **authentication should be added** to the API. You are responsible for the costs associated with deploying this project, it is recommended to **destroy the stack when not in use**.
 
 ## JSON Schema for Model and Endpoint Configuration
 
