@@ -12,7 +12,7 @@ This is a CDK project that stands up a centralized API for use during Hackathons
 
 ## JSON Schema for Model and Endpoint Configuration
 
-This JSON schema is used for validating the configuration of various machine learning models to deploy and existing endpoints to adopt into the api. 
+This [JSON schema](./config/models.json) is used for validating the configuration of various machine learning models to deploy and existing endpoints to adopt into the api. 
 
 ### Schema
 
@@ -43,6 +43,8 @@ The root object must have properties named `models` and `endpoints`, which are a
 - **endpoints**: An array of objects that define the endpoints associated with models.
     - **name**: (Required) A unique string name for the endpoint following the pattern `^[a-z0-9-]+$`.
     - **integration**: (Required) Defines how the endpoint integrates with other services. (Same as the integration in models)
+
+:warning: `Caller is not subscribed to the marketplace offering` Before deploying, you may need to manually subscribe to models from the Marketplace [**here**](https://us-east-1.console.aws.amazon.com/sagemaker/home?region=us-east-1#/marketplace-search-model-packages!mpSearch/). :warning:
 
 ### Example
 
