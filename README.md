@@ -44,7 +44,7 @@ The root object must have properties named `models` and `endpoints`, which are a
     - **name**: (Required) A unique string name for the endpoint following the pattern `^[a-z0-9-]+$`.
     - **integration**: (Required) Defines how the endpoint integrates with other services. (Same as the integration in models)
 
-:warning: Depending on the `model_package_arn` you specify you may be required to subscribe to a Marketplace Offering to get access to the model package [**here**](https://aws.amazon.com/marketplace/search/results?FULFILLMENT_OPTION_TYPE=SAGEMAKER_MODEL&filters=FULFILLMENT_OPTION_TYPE). 
+:warning: Depending on the `model_package_arn` you specify you may be required to subscribe to a Marketplace Offering to get access to the model package [here](https://aws.amazon.com/marketplace/search/results?FULFILLMENT_OPTION_TYPE=SAGEMAKER_MODEL&filters=FULFILLMENT_OPTION_TYPE). 
 
 ### Example
 
